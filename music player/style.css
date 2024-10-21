@@ -1,0 +1,30 @@
+body
+ {   
+     display: flex;
+     justify-content: center; 
+     align-items: center; height: 100vh; 
+     background: #1e1e1e; color: white; 
+     overflow: hidden;
+    }
+.player 
+{ 
+    text-align: center; 
+    background: #333; 
+    padding: 20px; 
+    border-radius: 10px; 
+    width: 50%; 
+}
+button 
+{ 
+    padding: 10px 20px; 
+    background: #edeb86; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    margin-top: 10px; 
+}
+audio 
+{ 
+    width: 100%; 
+    margin-top: 10px; 
+}

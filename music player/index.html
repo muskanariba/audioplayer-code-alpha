@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Doraemon Theme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player">
+        <h1>Doraemon Theme</h1>
+        <audio id="audio" src="doraemon.mp3.mp3" controls></audio>
+        <button onclick="play()">Play/Pause</button>
+    </div>
+
+    <script>
+        const audio = document.getElementById("audio");
+        const button = document.querySelector("button");
+
+        function play() {
+            if (audio.paused) {
+                audio.play();
+                button.textContent = "Pause";
+            } else {
+                audio.pause();
+                button.textContent = "Play";
+            }
+        }
+    </script>
+</body>
+</html>
