@@ -1,0 +1,62 @@
+html, body {
+    height: 100%; /* Make sure the body takes full height */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+header {
+    background-color: #303430;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.main {
+    flex: 1; /* Make main content area expand to fill available space */
+    padding: 15px;
+}
+
+.image-container {
+    display: flex; /* Display images in a row */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center images */
+}
+
+img {
+    margin: 10px;
+    border-radius: 8px; 
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+img:hover {
+    transform: scale(1.1); /* Scale image on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    img {
+        width: 100%; /* Make images full-width on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
